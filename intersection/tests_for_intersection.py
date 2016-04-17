@@ -18,7 +18,7 @@ class TestIntersection(unittest.TestCase):
     def test_intersection_full(self):
         array1 = [3, 3, 3, 3, 7, 7, 9, 9, 12, 12]
         array2 = [3, 3, 3, 3, 7, 7, 9, 9, 12, 12]
-        self.assertEqual(list(intersection.intersection(array1, array2)), [3, 3, 3, 3, 7, 7, 9, 9, 12, 12])
+        self.assertEqual(list(intersection.intersection(array1, array2)), array1)
 
     def test_intersection_partial(self):
         array1 = [1, 3, 3, 3, 3, 9]
